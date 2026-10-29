@@ -1,0 +1,175 @@
+{
+  "version": 4,
+  "lines": [
+    [
+      {
+        "id": "model",
+        "type": "model",
+        "color": "brightWhite",
+        "rawValue": true
+      },
+      {
+        "id": "sep1",
+        "type": "separator",
+        "color": "brightBlack"
+      },
+      {
+        "id": "branch",
+        "type": "git-branch",
+        "color": "yellow",
+        "rawValue": true,
+        "metadata": {
+          "hide": "no-git"
+        }
+      },
+      {
+        "id": "dirty",
+        "type": "git-clean-status",
+        "color": "yellow",
+        "merge": "no-padding",
+        "metadata": {
+          "symbolClean": "",
+          "symbolDirty": "*",
+          "hide": "no-git"
+        }
+      },
+      {
+        "id": "sep2",
+        "type": "separator",
+        "color": "brightBlack"
+      },
+      {
+        "id": "ctx",
+        "type": "context-percentage",
+        "color": "green",
+        "rawValue": true,
+        "numberFormat": {
+          "decimals": 0
+        }
+      },
+      {
+        "id": "sep3",
+        "type": "separator",
+        "color": "brightBlack"
+      },
+      {
+        "id": "5h-label",
+        "type": "custom-text",
+        "customText": "5h ",
+        "color": "brightBlack"
+      },
+      {
+        "id": "5h",
+        "type": "session-usage",
+        "color": "green",
+        "rawValue": true,
+        "numberFormat": {
+          "decimals": 0
+        }
+      },
+      {
+        "id": "5h-reset",
+        "type": "reset-timer",
+        "color": "brightBlack",
+        "rawValue": false,
+        "metadata": {
+          "compact": "true",
+          "label": " ("
+        }
+      },
+      {
+        "id": "5h-close",
+        "type": "custom-text",
+        "customText": ")",
+        "color": "brightBlack",
+        "merge": "no-padding"
+      },
+      {
+        "id": "sep4",
+        "type": "separator",
+        "color": "brightBlack"
+      },
+      {
+        "id": "7d-label",
+        "type": "custom-text",
+        "customText": "7d ",
+        "color": "brightBlack"
+      },
+      {
+        "id": "7d",
+        "type": "weekly-usage",
+        "color": "green",
+        "rawValue": true,
+        "numberFormat": {
+          "decimals": 0
+        }
+      },
+      {
+        "id": "7d-reset",
+        "type": "weekly-reset-timer",
+        "color": "brightBlack",
+        "rawValue": false,
+        "metadata": {
+          "compact": "true",
+          "label": " ("
+        }
+      },
+      {
+        "id": "7d-close",
+        "type": "custom-text",
+        "customText": ")",
+        "color": "brightBlack",
+        "merge": "no-padding"
+      }
+    ],
+    [
+      {
+        "id": "prompt",
+        "type": "custom-command",
+        "commandPath": "node ~/.claude/statusline.js",
+        "preserveColors": true,
+        "timeout": 2000
+      }
+    ],
+    [
+      {
+        "id": "tree",
+        "type": "custom-text",
+        "customText": " └ ",
+        "color": "brightBlack"
+      },
+      {
+        "id": "cwd",
+        "type": "current-working-dir",
+        "color": "brightBlack",
+        "rawValue": true,
+        "metadata": {
+          "abbreviateHome": "true"
+        }
+      }
+    ]
+  ],
+  "flexMode": "full",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "defaultPaddingSide": "both",
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "gitCacheTtlSeconds": 5,
+  "terminalWidthCacheTtlSeconds": 5,
+  "customCommandCacheTtlSeconds": 0,
+  "minimalistMode": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [],
+    "endCaps": [],
+    "autoAlign": false,
+    "continueThemeAcrossLines": false
+  }
+}
